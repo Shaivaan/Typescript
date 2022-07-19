@@ -7,8 +7,11 @@ type StateType = {
 
 
 
-// React.Component<State Type,Props Types>
+// React.Component<Props Types,State Type>
 export class Home extends React.Component<{}, StateType> {
+
+
+
   //  useEffect without Dependency
   componentDidMount() {
     console.log("Mounted");
@@ -17,8 +20,7 @@ export class Home extends React.Component<{}, StateType> {
 
 
   // useState
-  constructor(props: any) {
-    //both lines are necessary
+  constructor(props: any) {  //both lines are necessary
     super(props); //both lines are necessary
     // let [count,setCount] = useState(0);
     // let [noUse,setNoUse] = useState(null);
@@ -27,7 +29,6 @@ export class Home extends React.Component<{}, StateType> {
       noUse: null,
     };
   }
-
 
 
   //  Dependency of UseEffect.
@@ -68,6 +69,7 @@ export class Home extends React.Component<{}, StateType> {
   componentWillUnmount() {
     // Works Only When this components get destroyed or removed
   }
+  
 
   //  render consists JSX just like in functional Component
   render() {
