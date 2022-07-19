@@ -11,9 +11,9 @@ export class Routers extends React.Component{
 
               {/* This consist useState,useEffect,setState in Class Component */}
               <Route path='/' element= {<Home/>} />
-
               {/* Navigation in Class Components change route by yourself*/}
               <Route path='/nav' element= {<FunNavigater/>}/>
+              {/* This Component consist the use of useLocation */}
               <Route path='/loc' element= {<Locater/>}/>
             </Routes>
          </> 
