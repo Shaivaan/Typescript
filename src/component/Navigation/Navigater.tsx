@@ -1,13 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavigateFunction, NavigateProps, useNavigate } from 'react-router-dom'
 
-export const FunNavigater=()=> {
-    const navigate = useNavigate();
-  return (
-    // Use Navigate has been passed in the prop of this Class Component
-    <ClassNavigater navigate= {navigate}/>
-  )
-}
 
 
 type PropType = {
@@ -15,7 +8,7 @@ type PropType = {
 }
 
 
-class ClassNavigater extends React.Component<PropType,{name:string}>{
+export class ClassNavigater extends React.Component<PropType,{name:string}>{
 
     constructor(props:PropType){
         super(props)
